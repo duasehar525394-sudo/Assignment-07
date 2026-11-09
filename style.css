@@ -1,0 +1,169 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 35px;
+    font-family: Arial, sans-serif;
+    background: #171923;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: #c4b5fd;
+}
+
+h2 {
+    color: #c4b5fd;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px 0 40px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    background: #292d40;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+nav a:hover {
+    background: #a78bfa;
+    color: #171923;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.widget,
+section,
+#counterContainer {
+    display: block;
+    background: #222536;
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px auto;
+    max-width: 500px;
+    color: white;
+}
+
+.dashboard .widget {
+    margin: 0;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.widget:hover {
+    background: #303449;
+    transform: translateY(-4px);
+}
+
+.widget h2,
+section h2,
+#counterContainer h2 {
+    color: #c4b5fd;
+}
+
+.widget p {
+    color: #a7a9ba;
+}
+
+.widget span {
+    color: #c4b5fd;
+}
+
+#todoContainer {
+    width: 500px;
+    max-width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#taskControls {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #454960;
+    border-radius: 8px;
+    background: #171923;
+    color: white;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #a78bfa;
+    color: #171923;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#taskList {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: #303449;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+#taskList li button {
+    background: #fca5a5;
+}
+
+#counter {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#counterDisplay {
+    font-size: 40px;
+    text-align: center;
+}
+
+#counterContainer button {
+    margin: 0 8px;
+}
+
+img {
+    max-width: 100%;
+    width: 350px;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+}
